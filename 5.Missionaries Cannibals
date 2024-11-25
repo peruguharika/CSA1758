@@ -101,23 +101,39 @@ try:
 except EOFError as e:
 	print("\nInvalid input please retry !!")
 Output:
-Enter the number of rows in the room: 3
-Enter the number of columns in the room: 2
-Enter the room state row by row (1 for Dirty, 0 for Clean):
-Row 1: 1 0 
-Row 2: 0 1
-Row 3: 1 1
-Initial Room State:
-D C
-C D
-D D
+Enter the number of missionaries: 3
 
-Vacuum Cleaner Path:
-(0,0) -> (0,1) -> (1,0) -> (1,1) -> (2,0) -> (2,1)
+Enter the number of cannibals: 3
 
-Final Room State (Cleaned):
-C C
-C C
-C C
 
- 
+
+Solving the Missionaries and Cannibals problem...
+
+
+
+Solution found!
+
+Left: 3M, 3C | Right: 0M, 0C | Boat: Left
+
+Left: 3M, 1C | Right: 0M, 2C | Boat: Right
+
+Left: 3M, 2C | Right: 0M, 1C | Boat: Left
+
+Left: 3M, 0C | Right: 0M, 3C | Boat: Right
+
+Left: 3M, 1C | Right: 0M, 2C | Boat: Left
+
+Left: 1M, 1C | Right: 2M, 2C | Boat: Right
+
+Left: 2M, 2C | Right: 1M, 1C | Boat: Left
+
+Left: 0M, 2C | Right: 3M, 1C | Boat: Right
+
+Left: 0M, 3C | Right: 3M, 0C | Boat: Left
+
+Left: 0M, 1C | Right: 3M, 2C | Boat: Right
+
+Left: 1M, 1C | Right: 2M, 2C | Boat: Left
+
+Left: 0M, 0C | Right: 3M, 3C | Boat: Right
+
